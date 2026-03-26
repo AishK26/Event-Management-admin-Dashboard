@@ -1,0 +1,180 @@
+/* Dashboard.css */
+
+.container-dashboard {
+  width: 91%;
+  padding: 1em;
+}
+.main-container-for-Addaccount {
+  background-color: #fff;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+.dashboard {
+  color: black;
+}
+.dashboard:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.text-success {
+  color: green;
+}
+/* Dashboard.css */
+.breadcrumb {
+  background-color: transparent;
+  margin-left: 20;
+}
+
+.breadcrumb-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+#pieChart {
+  height: 300px;
+}
+/* Recent activity card */
+.activity-card {
+  background-color: white;
+  padding: 20px;
+}
+
+.activity-title {
+  text-align: center;
+  color: black;
+}
+
+.activity-dot {
+  margin-right: 10px;
+}
+
+.green-dot {
+  color: green;
+}
+
+.yellow-dot {
+  color: yellow;
+}
+
+.orange-dot {
+  color: orange;
+}
+
+.red-dot {
+  color: red;
+}
+
+span {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: #0062cc;
+  /* border-bottom:2px solid #0062cc; */
+}
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background: #fff;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
+}
+.text {
+  margin: 20px 0px;
+}
+
+.fa {
+  color: #4183d7;
+}
+/* In your CSS file */
+.fixed-width-badge {
+  min-width: 150px; /* Adjust based on the longest text */
+  display: inline-block;
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem; /* h-48 */
+  background-color: #e0e7ff; /* bg-indigo-200 */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 1rem; /* rounded-xl */
+  border: 2px solid transparent; /* Initial transparent border */
+  transition: all 0.3s ease;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-container:hover {
+  border: 4px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-image: linear-gradient(90deg, red, green, blue) 1;
+  border-image-slice: 1;
+  animation: gradient-border 5s linear infinite; /* Adding animation for running effect */
+}
+
+@keyframes gradient-border {
+  0% {
+    border-image: linear-gradient(90deg, red, green, blue) 1;
+  }
+  50% {
+    border-image: linear-gradient(90deg, green, blue, red) 1;
+  }
+  100% {
+    border-image: linear-gradient(90deg, blue, red, green) 1;
+  }
+}

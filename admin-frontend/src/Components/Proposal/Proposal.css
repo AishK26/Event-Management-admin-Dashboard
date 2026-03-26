@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.table-container-proposal {
+
+    background-color: #d4defc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.3);
+    margin-top: 1rem;
+    /* margin: 3% auto; */
+  }
+  
+  .proposal-content table {
+
+  width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #d4defc;
+    border: none;
+  } 
+  
+  
+  .proposal-content th,.proposal-content td {
+  padding: 10px 8px;
+  text-align: left;
+  /* border: 1px solid #ddd; */
+  border: none;   
+  width: 100%;  
+  }
+  
+  .proposal-content tr{
+  border-radius: 10px;
+  margin-bottom: 4px;
+  
+  
+  }
+  .proposal-content th{
+  background-color: transparent;
+  box-shadow: none;
+  }
+  
+  .proposal-content thead tr{
+  box-shadow: none;
+  }
+
+.proposal-bill-container{
+    width: 80%;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposal-bill-container td{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.proposal-bill-container td:nth-child(even){
+text-align: right;
+padding-right: 20px;
+} 
+
+.proposal-button-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width:427px) {
+
+
+    .proposal-bill-container{
+        width: 100%;
+        font-size: 12px;        
+    }
+
+    .proposal-bill-container td{
+        padding: 3px;
+        text-align: start;
+    }
+    .proposal-stock-otheramount{
+        display: flex-wrap;
+    }
+}
+
+
+.search-inputs-container{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 80%;
+    margin: 3% auto;
+}
+
+
+.stock-vendor-dropdown{
+    display: flex;
+    width: 50%;
+}
+
+.stock-vendor-dropdown .dropdown-item{
+    /* width: 100%; */
+    width: 100%;
+}
+
+.search-inputs-container input{
+    width: 100%;
+}
+
+
+.search-input-fields{
+    /* display: flex;
+    gap: 10px;
+    width: 40%; */
+}
+
+.hr-line{
+    width: 80%;
+    /* margin: 0 auto; */
+    margin: -20px auto 0;
+}
+
+
+
+.heading-proposal{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:1025px) {
+
+    .search-input-fields{
+       
+        width: 70%;
+    }
+}
+
+
+@media (max-width:769px) {
+    .search-inputs-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .stock-vendor-dropdown{
+        width: 100%;
+    }
+
+    .search-input-fields{
+       
+        width: 100%;
+    }
+}
+
+@media (max-width:429px) {
+ 
+    .search-inputs-container{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .stock-vendor-dropdown {
+        gap: 10px;
+    }
+
+    .stock-vendor-dropdown .dropdown-item{
+        margin-left: -8px;
+        width: 100%;
+    }
+    .hr-line{
+        width: 100%;
+    }
+
+    .search-inputs-container{
+        /* width: 80%; */
+        margin: 8% 3px;
+    }
+
+    .search-inputs-container input{
+        width: 100%;
+        margin: 3px;
+        /* flex-direction: column; */
+        padding: 2px 5px;
+    }
+    
+}
+
+@media (max-width:668px) {
+    .proposal tr {
+      display: flex;
+      flex-direction: column;
+      /* background-image: linear-gradient(135deg, rgb(59, 130, 246), rgb(29, 78, 216)); */
+    }
+  
+    .proposal thead {
+      display: none;
+    }
+  
+    .proposal th,
+    .proposal td {
+      padding: 4px 4px;
+    }
+  }

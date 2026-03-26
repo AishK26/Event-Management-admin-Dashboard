@@ -1,0 +1,219 @@
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+.overlay-text {
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.right-section {
+  flex: 0 0 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #e0e7ff;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .signup-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* Photo upload container styling */
+.photo-upload-container {
+  margin-bottom: 1rem;
+}
+
+.photo-upload-label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+}
+
+.photo-upload-input {
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.password-container {
+  position: relative; /* To position the eye icon inside the input field */
+  margin-bottom: 1rem;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 2.5rem; /* Provide space for the eye icon */
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+/* Align checkbox and label on the same line */
+.form-remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; /* Reduce margin to minimize space below */
+}
+
+.form-remember input[type="checkbox"] {
+  margin-right: 0.5rem;
+  vertical-align: middle; /* Ensure vertical alignment of checkbox */
+}
+
+.signup-btn {
+  padding: 0.75rem;
+  background-color: #1E40AF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+/* .signup-btn:hover {
+  background-color: rgb(219, 48, 48);
+} */
+
+/* Red color for the "Log in" link */
+.login-text {
+  margin: 0.5rem 0; /* Reduce margin to minimize space below */
+  line-height: 1.2; /* Tighter line spacing */
+}
+
+.login-text a {
+  color: #1E40AF;
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.or-text {
+  text-align: center;
+  margin: 0.5rem 0; /* Reduce margin to minimize space below */
+  line-height: 1.2; /* Tighter line spacing */
+}
+
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.google-signin-btn img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.google-signin-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Make form responsive and hide background image */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column; /* Stack sections vertically */
+    height: auto;
+  }
+
+  .left-section {
+    display: none; /* Hide left section on smaller screens */
+  }
+
+  .right-section {
+    flex: 1;
+    width: 100%; /* Full width on smaller screens */
+    min-height: 100vh; /* Make sure the form occupies the full height */
+  }
+}
+
+.signup-btn {
+  background-color: #1E40AF;
+  /* Adjust button color as needed */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Adjust padding for all screen sizes */
+  border: none;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+  width: 16rem; /* Default width for xs screens */
+}
+
+@media (min-width: 640px) { /* sm screens and up */
+  .signup-btn {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 768px) { /* md screens and up */
+  .signup-btn {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1024px) { /* lg screens and up */
+  .signup-btn {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1280px) { /* xl screens and up */
+  .signup-btn {
+    width: 22rem;
+  }
+}
+
+.signup-btn:hover {
+  background-color: #0056b3; /* Button color on hover */
+}

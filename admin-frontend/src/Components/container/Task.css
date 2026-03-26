@@ -1,0 +1,9 @@
+.task-component{
+    height: 84vh;
+}
+
+@media screen and (max-width:768px) {
+    .task-component{
+        height:100vh;
+    }
+}

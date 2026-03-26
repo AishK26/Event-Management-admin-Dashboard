@@ -1,0 +1,9 @@
+
+@media (max-width:769px) {
+    .add-venue-container{
+        margin-left: 30px;
+    }
+   .view-venue-container{
+    margin-left: 50px;
+    }
+}

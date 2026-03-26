@@ -1,0 +1,90 @@
+.datepicker-enquiry {
+  width: 22rem;
+  padding-left: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  
+  .search-viewenquiry,
+  .dropdown-addenquiry,
+  .datepicker-enquiry {
+    width: 100% !important;
+  }
+
+  .pagination-button {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .viewenquiry {
+    margin-top: 0;
+  }
+
+  .search-viewenquiry {
+    width: 15.8rem !important;
+    padding: 1rem;
+  }
+
+  .dropdown-addenquiry {
+    width: 15.8rem !important;
+  }
+
+  .addenquiry {
+    margin-top: 34px;
+  }
+
+  .datepicker-enquiry {
+    width: 15.8rem;
+  }
+
+  .modal-content {
+    width: 66% !important;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .model-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (max-width:668px) {
+  .view-enquiry tr {
+    display: flex;
+    flex-direction: column;
+    /* background-image: linear-gradient(135deg, rgb(59, 130, 246), rgb(29, 78, 216)); */
+  }
+
+  .view-enquiry thead {
+    display: none;
+  }
+
+  .view-enquiry th,
+  .view-enquiry td {
+    padding: 4px 4px;
+  }
+}

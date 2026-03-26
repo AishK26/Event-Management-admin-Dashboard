@@ -1,0 +1,43 @@
+.event-content table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: none;
+  width: 100%;
+}
+
+.event-content th,
+.event-content td {
+  padding: 15px 8px;
+  text-align: left;
+  /* border: 1px solid #ddd; */
+  border: none;
+  width: 100%;
+}
+
+.event-content tr {
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+.event-content th {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.event-content thead tr {
+  box-shadow: none;
+}
+@media (max-width: 668px) {
+  .event-content tr {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .event-content th {
+    display: none;
+  }
+  .event-content th,
+  .event-content td {
+    padding: 8px 8px;
+  }
+}

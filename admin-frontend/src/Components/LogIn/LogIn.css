@@ -1,0 +1,216 @@
+.login-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 0.5rem;
+  width: 100%; 
+}
+
+.login-remember label[for="keepSignedIn"] {
+  margin-right: auto;
+}
+
+.login-remember label[for="forgotPass"] {
+  color: #1E40AF;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 220px;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+.login-overlay {
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.login-overlay h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.login-right {
+  flex: 0 0 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #e0e7ff;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* .login-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.login-password-container {
+  position: relative;
+}
+
+.login-password-container input {
+  width: 100%;
+  padding-right: 2.5rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.login-toggle-password {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+.login-btn {
+  padding: 0.75rem;
+  background-color: #1E40AF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.login-text {
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.login-text a {
+  color: #1E40AF;
+  text-decoration: none;
+}
+
+.login-or-text {
+  text-align: center;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.login-google-btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.login-google-btn img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+ 
+.login-remember label[for="forgotPass"] {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .login-remember label[for="forgotPass"] {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 498px) {
+  .login-remember label[for="forgotPass"] {
+    margin-left: auto;
+  }
+}
+.login-btn {
+  background-color: #1E40AF;
+  /* Adjust button color as needed */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Adjust padding for all screen sizes */
+  border: none;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease;
+  /* width: 18rem; Default width for xs screens */
+  width: 100%;
+
+}
+
+@media (min-width: 640px) { /* sm screens and up */
+  .login-btn {
+    /* width: 22rem; */
+    width: 100%;
+
+  }
+}
+
+@media (min-width: 768px) { /* md screens and up */
+  .login-btn {
+    /* width: 20rem; */
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) { /* lg screens and up */
+  .login-btn {
+    /* width: 22rem; */
+    width: 100%;
+
+
+  }
+}
+
+@media (min-width: 1280px) { /* xl screens and up */
+  .login-btn {
+    width: 27rem;
+  }
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Button color on hover */
+}

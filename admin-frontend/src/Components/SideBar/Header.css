@@ -1,0 +1,103 @@
+.sidebar {
+  background-color: #e0f2ff; /* Light blue background */
+  width: 60px;
+  height: 100vh;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #1e40af; /* Icon color */
+  position: absolute;
+  top: 10px;
+  right: 22px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.menu-item {
+  color: #1e40af; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.menu-item svg {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #1e40af; /* Icon color */
+}
+
+.menu-item span {
+  color: #1e40af; /* Text color */
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #e0f2ff; /* Light blue background */
+  border-left: 2px solid #e0f2ff;
+  margin-left: 0;
+  padding-left: 15px;
+}
+
+.dropdown-item {
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1e40af; /* Text color */
+  transition: all 0.2s; /* Smooth transition for width */
+  width: 100%; /* Default width */
+}
+
+.dropdown-item:hover {
+  background-color: #1e40af; /* Highlight on hover */
+  border-radius: 5px;
+  color: white; /* Change text color on hover for contrast */
+  padding-left: 20px; /* Increase padding to widen the item visually */
+  width: 110%; /* Increase width on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for effect */
+}
+
+.sidebar.expanded .menu-item {
+  flex-direction: column;
+}
+
+.sidebar.expanded .dropdown-menu {
+  display: flex;
+}
+
+.sidebar.collapsed .menu-item span {
+  display: none;
+}
+
+.sidebar.expanded .menu-item svg {
+  display: none; /* Hide icons when expanded */
+}

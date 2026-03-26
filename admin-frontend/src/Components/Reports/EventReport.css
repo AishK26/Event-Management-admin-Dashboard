@@ -1,0 +1,21 @@
+@media (max-width:668px) {
+    .eventreport-content tr{
+      display: flex;
+      flex-direction: column;  
+      /* background-image: linear-gradient(135deg, rgb(59, 130, 246), rgb(29, 78, 216)); */
+    }
+  
+    .eventreport-content thead{
+    display: none;  
+  }
+  
+  .eventreport-content th,.vendor-content td {
+    padding: 4px 4px;
+  }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+     
+  }
+  

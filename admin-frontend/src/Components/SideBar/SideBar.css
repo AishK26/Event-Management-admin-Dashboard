@@ -1,0 +1,108 @@
+.header-component {
+  background-color: #1e40af;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header-component {
+    background-color: #1e40af;
+    width: 100vh;
+  }
+}
+.icon-text {
+  align-items: center;
+  appearance: none;
+  /* background-image: radial-gradient(
+        100% 100% at 100% 0,
+        #5adaff 0,
+        #9b59b6 100%
+      ); */
+  background-color: #3b82f6;
+  border: 0;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: "JetBrains Mono", monospace; */
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  color: white;
+}
+.two {
+  background-color: #1e40af;
+  height: 100%;
+}
+.one {
+  background-color: #1e40af;
+}
+
+.icon-text:hover {
+  background: none;
+  background-color: #00aef7;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  border-radius: 15px;
+}
+
+.menuitems-of-header.active {
+  align-items: center;
+  appearance: none;
+  /* background-image: radial-gradient(
+        100% 100% at 100% 0,
+        #5adaff 0,
+        #5468ff 100%
+      ); */
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+.menuitems-of-header {
+  display: flex;
+  align-items: center;
+}
+.menuitems-of-header:hover {
+}
+/* .MuiBox-root,
+    .css-zxdg2z {
+      padding: 5px;
+    } */

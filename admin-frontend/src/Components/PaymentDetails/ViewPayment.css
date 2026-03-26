@@ -1,0 +1,15 @@
+@media (max-width:668px) {
+    .vendor-content tr{
+      display: flex;
+      flex-direction: column;  
+      /* background-image: linear-gradient(135deg, rgb(59, 130, 246), rgb(29, 78, 216)); */
+    }
+  
+    .vendor-content thead{
+    display: none;  
+  }
+  
+  .vendor-content th,.vendor-content td {
+    padding: 4px 4px;
+  }
+  }
